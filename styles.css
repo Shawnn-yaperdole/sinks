@@ -74,18 +74,20 @@ section {
 article {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
     overflow: hidden;
 }
 
 img {
-    width: 50%;
+    width: 10%;
     height: auto;
-    transition: transform 0.3 ease;
+    transition: width 0.3 ease, transform 0.3 ease;
 }
 
 article:hover img {
-    transform: scale(1.2);
+    width: 40%;
+    transform: scale(1);
 }
 
 h1, h2 {
