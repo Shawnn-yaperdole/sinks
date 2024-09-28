@@ -24,6 +24,7 @@ header {
     align-items: center;
     background-color: var(--secondary-bg-color);
     padding: 10px;
+    width: 100%;
 }
 
 footer {
@@ -32,6 +33,7 @@ footer {
     align-items: center;
     background-color: var(--secondary-bg-color);
     padding: 10px;
+    width: 100%;
 }
 
 nav {
@@ -49,7 +51,9 @@ nav ul {
     padding: 0;
     margin: 0;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    align-items: center;
 }
 
 nav li {
@@ -116,7 +120,7 @@ p {
     }
 
     nav ul {
-        flex-wrap: nowrap;
+        flex-wrap: wrap; 
     }
 
     nav li {
