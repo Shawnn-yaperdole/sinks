@@ -1,4 +1,10 @@
-/* Outdated CSS */
+:root {
+    --main-bg-color: #999494;
+    --nav-bg-color: #333333;
+    --nav-text-color: white;
+    --font-family: 'Times New Roman', serif; 
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
