@@ -49,7 +49,7 @@ nav ul {
     padding: 0;
     margin: 0;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 nav li {
@@ -84,7 +84,7 @@ article {
     align-items: center;
     margin-bottom: 20px;
     overflow: hidden;
-    width: 100%; 
+    width: 100%;
 }
 
 img {
@@ -108,26 +108,26 @@ p {
 
 @media (max-width: 600px) {
     img {
-        width: 80%; 
+        width: 80%;
     }
 
     article:hover img {
-        width: 100%; 
+        width: 100%;
     }
 
     nav ul {
-        flex-direction: column; 
+        flex-wrap: nowrap;
     }
 
     nav li {
-        margin: 10px 0;
+        margin: 0 10px;
     }
 
     main {
-        padding: 10px; 
+        padding: 10px;
     }
 
     header, footer {
-        padding: 10px; 
+        padding: 10px;
     }
 }
