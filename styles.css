@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color:#a59898;
+    --main-bg-color: #a59898;
     --secondary-bg-color: #534e4e;
     --nav-bg-color: #1d1a1a;
     --nav-text-color: rgb(185, 174, 174);
@@ -84,12 +84,13 @@ article {
     align-items: center;
     margin-bottom: 20px;
     overflow: hidden;
+    width: 100%; 
 }
 
 img {
     width: 10%;
     height: auto;
-    transition: width 0.3 ease, transform 0.3 ease;
+    transition: width 0.3s ease, transform 0.3s ease;
 }
 
 article:hover img {
@@ -105,3 +106,28 @@ p {
     margin: 10px 0;
 }
 
+@media (max-width: 600px) {
+    img {
+        width: 80%; 
+    }
+
+    article:hover img {
+        width: 100%; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px; 
+    }
+
+    header, footer {
+        padding: 10px; 
+    }
+}
